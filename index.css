@@ -1438,6 +1438,10 @@ img {
     display: flex;
   }
 
+  .about-content {
+    text-align: center;
+  }
+
   .services-grid,
   .portfolio-grid {
     grid-template-columns: 1fr;
