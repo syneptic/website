@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Syneptic | Where Intelligence Meets Innovation</title>
+    <meta name="description"
+        content="Syneptic is a next-generation IT company delivering cutting-edge solutions in software development, AI/ML, cloud, cybersecurity, and digital transformation." />
+    <meta name="keywords"
+        content="Syneptic, IT company, software development, AI, cloud, cybersecurity, web development" />
+    <meta property="og:title" content="Syneptic | Where Intelligence Meets Innovation" />
+    <meta property="og:description" content="Next-generation IT solutions for a smarter world." />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+
+    <!-- ══════════════════════ NAVBAR ══════════════════════ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <img src="logo.jpg" alt="Syneptic Logo" class="logo-img" />
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#team" class="nav-link">Team</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#contact" class="nav-cta">Get Started</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ══════════════════════ HERO ══════════════════════ -->
+    <section class="hero" id="hero">
+        <canvas id="particleCanvas"></canvas>
+        <div class="hero-grid-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span> Available for New Projects
+            </div>
+            <img src="logo.jpg" alt="Syneptic" class="hero-logo" />
+            <h1 class="hero-title">
+                Where <span class="gold-text">Intelligence</span><br />
+                Meets <span class="gold-gradient-text">Innovation</span>
+            </h1>
+            <p class="hero-subtitle">
+                We engineer next-generation digital solutions that transform ideas into reality.<br />
+                From AI systems to cloud architectures — we build the future.
+            </p>
+            <div class="hero-actions">
+                <a href="#services" class="btn btn-primary">Explore Services</a>
+                <a href="#contact" class="btn btn-ghost">Let's Talk →</a>
+            </div>
+            <div class="hero-scroll-indicator">
+                <span>Scroll to explore</span>
+                <div class="scroll-line"></div>
+            </div>
+        </div>
+        <div class="hero-floating-cards">
+            <div class="float-card float-card-1">
+                <span class="fc-icon">⚡</span>
+                <span>AI Powered</span>
+            </div>
+            <div class="float-card float-card-2">
+                <span class="fc-icon">🔒</span>
+                <span>Secure by Design</span>
+            </div>
+            <div class="float-card float-card-3">
+                <span class="fc-icon">☁️</span>
+                <span>Cloud Native</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════ ABOUT ══════════════════════ -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Who We Are</span>
+                <h2 class="section-title">Powering the Digital Future</h2>
+                <p class="section-subtitle">
+                    Syneptic is an elite IT company at the intersection of technology and creativity.
+                    We partner with businesses worldwide to architect solutions that are not just functional — but
+                    extraordinary.
+                </p>
+            </div>
+            <div class="about-grid">
+                <div class="about-visual reveal">
+                    <div class="about-circuit-box">
+                        <img src="logo.jpg" alt="Syneptic" class="about-logo-big" />
+                        <div class="circuit-ring ring-1"></div>
+                        <div class="circuit-ring ring-2"></div>
+                        <div class="circuit-ring ring-3"></div>
+                    </div>
+                </div>
+                <div class="about-content reveal-right">
+                    <h3>Built on Precision. Driven by Vision.</h3>
+                    <p>
+                        Founded with the belief that technology should be as smart as it is beautiful,
+                        Syneptic delivers bespoke digital solutions that scale, perform, and inspire.
+                        Our team of engineers, designers, and strategists work as one to turn complex
+                        challenges into elegant software.
+                    </p>
+                    <p>
+                        From startups to enterprise-level clients, we bring the same level of dedication,
+                        innovation, and craftsmanship to every project we touch.
+                    </p>
+                    <div class="about-tags">
+                        <span class="tag">Innovation-First</span>
+                        <span class="tag">Agile & Scalable</span>
+                        <span class="tag">Client-Centric</span>
+                        <span class="tag">Future-Proof</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="stats-grid reveal">
+                <div class="stat-card">
+                    <span class="stat-number" data-target="5">0</span>
+                    <span class="stat-plus">+</span>
+                    <span class="stat-label">Years of Excellence</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" data-target="120">0</span>
+                    <span class="stat-plus">+</span>
+                    <span class="stat-label">Projects Delivered</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" data-target="80">0</span>
+                    <span class="stat-plus">+</span>
+                    <span class="stat-label">Happy Clients</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" data-target="24">0</span>
+                    <span class="stat-plus">/7</span>
+                    <span class="stat-label">Support Available</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════ SERVICES ══════════════════════ -->
+    <section class="services section" id="services">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">What We Do</span>
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">
+                    A full spectrum of IT services, engineered to elevate your business.
+                </p>
+            </div>
+            <div class="services-grid">
+
+                <div class="service-card reveal" data-delay="0">
+                    <div class="service-icon-wrap">
+                        <div class="service-icon">⚙️</div>
+                    </div>
+                    <h3>Odoo Implementation</h3>
+                    <p>End-to-end ERP setup and business alignment. We mainly focus on Odoo implementations in Odoo 16, 17, 18, and 19.</p>
+                    <ul class="service-list">
+                        <li>System Configuration</li>
+                        <li>Data Migration</li>
+                        <li>User Training</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Learn More →</a>
+                </div>
+
+                <div class="service-card reveal" data-delay="100">
+                    <div class="service-icon-wrap">
+                        <div class="service-icon">🛠️</div>
+                    </div>
+                    <h3>Odoo Customizations</h3>
+                    <p>Tailored module development and advanced customizations in Odoo 16, 17, 18, and 19 to fit your unique needs.</p>
+                    <ul class="service-list">
+                        <li>Custom Workflows</li>
+                        <li>API Integrations</li>
+                        <li>Automated Reporting</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Learn More →</a>
+                </div>
+
+                <div class="service-card reveal" data-delay="200">
+                    <div class="service-icon-wrap">
+                        <div class="service-icon">💻</div>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>High-performance web applications built with modern frameworks. From landing pages to
+                        enterprise-grade platforms.</p>
+                    <ul class="service-list">
+                        <li>React / Next.js / Vue</li>
+                        <li>Node.js & REST APIs</li>
+                        <li>Progressive Web Apps</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Learn More →</a>
+                </div>
+
+                <div class="service-card reveal" data-delay="100">
+                    <div class="service-icon-wrap">
+                        <div class="service-icon">🤖</div>
+                    </div>
+                    <h3>AI & Machine Learning</h3>
+                    <p>Intelligent systems that learn, predict, and automate. Transform your data into your greatest
+                        competitive asset.</p>
+                    <ul class="service-list">
+                        <li>Predictive Analytics</li>
+                        <li>NLP & Computer Vision</li>
+                        <li>Custom ML Pipelines</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Learn More →</a>
+                </div>
+
+                <div class="service-card reveal" data-delay="200">
+                    <div class="service-icon-wrap">
+                        <div class="service-icon">☁️</div>
+                    </div>
+                    <h3>Cloud Solutions</h3>
+                    <p>Scalable, resilient cloud architectures on AWS, Azure, and GCP. Migrate, optimize, and modernize
+                        with confidence.</p>
+                    <ul class="service-list">
+                        <li>Cloud Migration</li>
+                        <li>DevOps & CI/CD</li>
+                        <li>Serverless Architecture</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Learn More →</a>
+                </div>
+
+                <div class="service-card reveal" data-delay="300">
+                    <div class="service-icon-wrap">
+                        <div class="service-icon">🔒</div>
+                    </div>
+                    <h3>Cybersecurity</h3>
+                    <p>End-to-end security solutions to protect your digital assets. Proactive defense in an
+                        ever-evolving threat landscape.</p>
+                    <ul class="service-list">
+                        <li>Penetration Testing</li>
+                        <li>Security Audits</li>
+                        <li>Compliance & GDPR</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Learn More →</a>
+                </div>
+
+                <div class="service-card reveal" data-delay="400">
+                    <div class="service-icon-wrap">
+                        <div class="service-icon">📱</div>
+                    </div>
+                    <h3>Mobile Development</h3>
+                    <p>Native and cross-platform mobile apps that deliver exceptional UX on iOS and Android. Built for
+                        performance and love.</p>
+                    <ul class="service-list">
+                        <li>React Native / Flutter</li>
+                        <li>iOS & Android Native</li>
+                        <li>App Store Optimization</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Learn More →</a>
+                </div>
+
+                <div class="service-card reveal" data-delay="500">
+                    <div class="service-icon-wrap">
+                        <div class="service-icon">🔧</div>
+                    </div>
+                    <h3>IT Consulting</h3>
+                    <p>Strategic technology advisory to align your IT roadmap with business goals. We help you make the
+                        right decisions.</p>
+                    <ul class="service-list">
+                        <li>Digital Transformation</li>
+                        <li>Architecture Review</li>
+                        <li>Tech Stack Strategy</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Learn More →</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════ PORTFOLIO ══════════════════════ -->
+    <section class="portfolio section" id="portfolio">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Our Work</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">A glimpse into the solutions we've crafted for our clients.</p>
+            </div>
+            <div class="portfolio-grid">
+
+                <div class="portfolio-card reveal" data-delay="0">
+                    <div class="portfolio-image"
+                        style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-tech">
+                                <span>React</span><span>Node.js</span><span>AWS</span>
+                            </div>
+                            <a href="#contact" class="portfolio-view-btn">View Project →</a>
+                        </div>
+                        <div class="portfolio-icon">🏦</div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>FinTech Analytics Platform</h3>
+                        <p>Real-time financial analytics dashboard with AI-powered insights for a leading investment
+                            firm.</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-card reveal" data-delay="150">
+                    <div class="portfolio-image"
+                        style="background: linear-gradient(135deg, #1a0a2e 0%, #2d1b69 50%, #11998e 100%);">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-tech">
+                                <span>Python</span><span>TensorFlow</span><span>GCP</span>
+                            </div>
+                            <a href="#contact" class="portfolio-view-btn">View Project →</a>
+                        </div>
+                        <div class="portfolio-icon">🧠</div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>AI Health Diagnostic System</h3>
+                        <p>ML-powered diagnostic tool achieving 94% accuracy in early disease detection.</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-card reveal" data-delay="300">
+                    <div class="portfolio-image"
+                        style="background: linear-gradient(135deg, #0a2e1a 0%, #1a4a2e 50%, #2d7a4f 100%);">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-tech">
+                                <span>Flutter</span><span>Firebase</span><span>Stripe</span>
+                            </div>
+                            <a href="#contact" class="portfolio-view-btn">View Project →</a>
+                        </div>
+                        <div class="portfolio-icon">🛒</div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>E-Commerce Super App</h3>
+                        <p>Full-featured mobile commerce platform serving 50K+ active users across 12 countries.</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-card reveal" data-delay="450">
+                    <div class="portfolio-image"
+                        style="background: linear-gradient(135deg, #2e1a0a 0%, #4a2d1a 50%, #7a4f2d 100%);">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-tech">
+                                <span>Azure</span><span>Docker</span><span>K8s</span>
+                            </div>
+                            <a href="#contact" class="portfolio-view-btn">View Project →</a>
+                        </div>
+                        <div class="portfolio-icon">🏭</div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Industrial IoT Platform</h3>
+                        <p>Cloud-native IoT solution monitoring 10,000+ connected devices in real-time for smart
+                            manufacturing.</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-card reveal" data-delay="600">
+                    <div class="portfolio-image"
+                        style="background: linear-gradient(135deg, #2e0a2e 0%, #4a1a4a 50%, #7a2d7a 100%);">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-tech">
+                                <span>Next.js</span><span>PostgreSQL</span><span>Redis</span>
+                            </div>
+                            <a href="#contact" class="portfolio-view-btn">View Project →</a>
+                        </div>
+                        <div class="portfolio-icon">🎓</div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>EdTech Learning Platform</h3>
+                        <p>Adaptive learning management system with personalized AI curriculum for 200+ institutions.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="portfolio-card reveal" data-delay="750">
+                    <div class="portfolio-image"
+                        style="background: linear-gradient(135deg, #0a2e2e 0%, #1a4a4a 50%, #2d7a7a 100%);">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-tech">
+                                <span>Vue.js</span><span>Go</span><span>AWS</span>
+                            </div>
+                            <a href="#contact" class="portfolio-view-btn">View Project →</a>
+                        </div>
+                        <div class="portfolio-icon">🔐</div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Enterprise Security Suite</h3>
+                        <p>Comprehensive cybersecurity platform protecting 500+ enterprise clients with zero-trust
+                            architecture.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════ TEAM ══════════════════════ -->
+    <section class="team section" id="team">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">The People</span>
+                <h2 class="section-title">Meet the Team</h2>
+                <p class="section-subtitle">Passionate minds building tomorrow's technology today.</p>
+            </div>
+            <div class="team-grid team-grid-duo">
+                <div class="team-card reveal" data-delay="0">
+                    <div class="team-avatar">
+                        <div class="avatar-circle">AE</div>
+                    </div>
+                    <h3>Asiri Ekanayaka</h3>
+                    <span class="team-role">CEO &amp; Co-Founder</span>
+                    <p>Visionary leader driving Syneptic's innovation strategy and client success.</p>
+                    <div class="team-socials">
+                        <a href="tel:+94756033051" aria-label="Call" title="Call us">📞</a>
+                        <a href="https://wa.me/94756033051" aria-label="WhatsApp" title="WhatsApp" target="_blank"
+                            rel="noopener">💬</a>
+                    </div>
+                </div>
+                <div class="team-card reveal" data-delay="150">
+                    <div class="team-avatar">
+                        <div class="avatar-circle">PA</div>
+                    </div>
+                    <h3>Pooja Alahakoon</h3>
+                    <span class="team-role">Director of Human Affairs &amp; Co-Founder</span>
+                    <p>People-first visionary fostering culture, partnerships, and meaningful human connections at
+                        Syneptic.</p>
+                    <div class="team-socials">
+                        <a href="tel:+94756033051" aria-label="Call" title="Call us">📞</a>
+                        <a href="https://wa.me/94756033051" aria-label="WhatsApp" title="WhatsApp" target="_blank"
+                            rel="noopener">💬</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════ CONTACT ══════════════════════ -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Let's Build Something <span class="gold-gradient-text">Incredible</span></h2>
+                <p class="section-subtitle">Ready to transform your vision into reality? We'd love to hear from you.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <h4>Email Us</h4>
+                            <a href="mailto:syneptic.it@gmail.com">syneptic.it@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h4>Call Us</h4>
+                            <a href="tel:+94756033051">+94 756 033 051</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h4>Location</h4>
+                            <span>Sri Lanka | Remote Worldwide</span>
+                        </div>
+                    </div>
+                    <div class="contact-socials">
+                        <a href="#" class="social-btn" aria-label="LinkedIn">LinkedIn</a>
+                        <a href="#" class="social-btn" aria-label="GitHub">GitHub</a>
+                        <a href="#" class="social-btn" aria-label="Twitter">Twitter</a>
+                    </div>
+                </div>
+                <form class="contact-form reveal-right" id="contactForm" novalidate>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="john@company.com" required />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject">
+                            <option value="">Select a service...</option>
+                            <option value="web">Web Development</option>
+                            <option value="ai">AI & Machine Learning</option>
+                            <option value="cloud">Cloud Solutions</option>
+                            <option value="security">Cybersecurity</option>
+                            <option value="mobile">Mobile Development</option>
+                            <option value="consulting">IT Consulting</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell us about your project..."
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-icon">→</span>
+                    </button>
+                    <div class="form-success" id="formSuccess">
+                        ✅ Thank you! We'll be in touch within 24 hours.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════ FOOTER ══════════════════════ -->
+    <footer class="footer">
+        <div class="footer-glow"></div>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img src="logo.jpg" alt="Syneptic" class="footer-logo" />
+                    <p>Engineering the future, one line of code at a time.</p>
+                </div>
+                <div class="footer-links-grid">
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#team">Team</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#services">Web Dev</a></li>
+                            <li><a href="#services">AI & ML</a></li>
+                            <li><a href="#services">Cloud</a></li>
+                            <li><a href="#services">Security</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#">LinkedIn</a></li>
+                            <li><a href="#">GitHub</a></li>
+                            <li><a href="#">Twitter</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Syneptic. All rights reserved.</p>
+                <p class="footer-tagline">Built with ❤️ and lots of ☕</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
