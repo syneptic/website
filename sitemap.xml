@@ -12,4 +12,10 @@
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
    </url>
+   <url><loc>https://syneptic.info/web-development/</loc><lastmod>2026-04-05</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+   <url><loc>https://syneptic.info/ai-machine-learning/</loc><lastmod>2026-04-05</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+   <url><loc>https://syneptic.info/cloud-solutions/</loc><lastmod>2026-04-05</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+   <url><loc>https://syneptic.info/cybersecurity/</loc><lastmod>2026-04-05</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+   <url><loc>https://syneptic.info/mobile-development/</loc><lastmod>2026-04-05</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+   <url><loc>https://syneptic.info/it-consulting/</loc><lastmod>2026-04-05</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>
