@@ -200,6 +200,11 @@ function initSmoothScroll() {
       if (!target) return;
       e.preventDefault();
       target.scrollIntoView({ behavior: 'smooth' });
+
+      // Clean up the URL hash visually after scroll triggers
+      setTimeout(() => {
+        history.replaceState(null, null, window.location.pathname + window.location.search);
+      }, 50);
     });
   });
 }
