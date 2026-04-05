@@ -292,7 +292,13 @@ function initContactForm() {
       });
       
       if (!response.ok) {
-        throw new Error('Problem reaching the email server');
+        // If the email is not yet activated, FormSubmit blocks AJAX.
+        // We fallback to a standard form submission so the browser navigates
+        // successfully to the FormSubmit Captcha/Activation page.
+        form.action = 'https://formsubmit.co/syneptic.it@gmail.com';
+        form.method = 'POST';
+        form.submit();
+        return;
       }
 
       // Success visual feedback
