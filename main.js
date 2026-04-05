@@ -279,20 +279,38 @@ function initContactForm() {
     btn.querySelector('.btn-text').textContent = 'Sending...';
     btn.querySelector('.btn-icon').textContent = '⏳';
 
-    // Simulate async send (replace with real endpoint / EmailJS / Formspree)
-    await new Promise(r => setTimeout(r, 1500));
+    try {
+      const formData = new FormData(form);
+      
+      // We use formsubmit.co AJAX API for backend-less email sending
+      const response = await fetch('https://formsubmit.co/ajax/syneptic.it@gmail.com', {
+        method: 'POST',
+        headers: { 
+            'Accept': 'application/json'
+        },
+        body: formData
+      });
+      
+      if (!response.ok) {
+        throw new Error('Problem reaching the email server');
+      }
 
-    // Success
-    btn.querySelector('.btn-text').textContent = 'Message Sent!';
-    btn.querySelector('.btn-icon').textContent = '✅';
-    success.classList.add('show');
-    form.reset();
+      // Success visual feedback
+      btn.querySelector('.btn-text').textContent = 'Message Sent!';
+      btn.querySelector('.btn-icon').textContent = '✅';
+      success.classList.add('show');
+      form.reset();
 
-    setTimeout(() => {
-      btn.disabled = false;
-      btn.querySelector('.btn-text').textContent = 'Send Message';
-      btn.querySelector('.btn-icon').textContent = '→';
-      success.classList.remove('show');
-    }, 5000);
+    } catch (err) {
+      console.error(err);
+      alert('There was a problem sending your message. Please reach out to syneptic.it@gmail.com directly.');
+    } finally {
+      setTimeout(() => {
+        btn.disabled = false;
+        btn.querySelector('.btn-text').textContent = 'Send Message';
+        btn.querySelector('.btn-icon').textContent = '→';
+        success.classList.remove('show');
+      }, 5000);
+    }
   });
 }
