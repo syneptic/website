@@ -759,6 +759,7 @@ img {
   border: 1px solid var(--border-gold);
   opacity: 0;
   transition: opacity var(--transition);
+  pointer-events: none;
 }
 
 .service-card:hover {
